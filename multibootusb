@@ -15,16 +15,16 @@ import platform
 # Had trouble in importing scripts directory. Had to add few lines below to ensure it works on source as well as
 # post install
 try:
-    from scripts.mbusb_cli import *
-    from scripts import admin
-    from scripts import gen
+    from multibootusb.mbusb_cli import *
+    from multibootusb import admin
+    from multibootusb import gen
 except:
     try:
-        from .scripts.mbusb_cli import *
-        from .scripts import admin
-        from .scripts import gen
+        from .multibootusb.mbusb_cli import *
+        from .multibootusb import admin
+        from .multibootusb import gen
     except:
-        import scripts
+        import multibootusb
 
 gui = True
 iso_link = None
@@ -46,7 +46,7 @@ def usage():
 
 
 def start_gui():
-    from scripts import mbusb_gui
+    from multibootusb import mbusb_gui
     gen.log('Starting multibootusb GUI...')
     if platform.system() == 'Linux':
         if os.getuid() != 0:

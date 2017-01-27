@@ -10,16 +10,16 @@ from distutils.core import setup
 #from setuptools import setup, find_packages
 import os
 import sys
-from scripts.gen import mbusb_version
+from multibootusb.gen import mbusb_version
 
 Version = mbusb_version()
 print(Version)
 setup(
     name='multibootusb',
     version=Version,
-    packages=['scripts', 'scripts.gui'],
+    packages=['multibootusb', 'multibootusb.gui'],
     #packages=find_packages(),
-    scripts=['multibootusb', 'multibootusb-pkexec'],
+    scripts=['bin/multibootusb', 'bin/multibootusb-pkexec'],
     platforms=['Linux'],
     url='http://multibootusb.org/',
     license='General Public License (GPL)',

@@ -16,7 +16,7 @@ from .usb import *
 from .gen import *
 # from .iso import *
 from . import iso
-from scripts.update_cfg_file import *
+from multibootusb.update_cfg_file import *
 from . import config
 from . import persistence
 

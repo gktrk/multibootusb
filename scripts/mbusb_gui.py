@@ -13,7 +13,7 @@ import signal
 from PyQt5 import QtCore, QtGui, QtWidgets
 import subprocess
 import time
-from scripts.gui.ui_multibootusb import Ui_Dialog
+from multibootusb.gui.ui_multibootusb import Ui_Dialog
 from . import usb
 from .gen import *
 from .install import *
