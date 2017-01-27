@@ -20,7 +20,7 @@ from .gen import *
 from . import iso
 from . import usb
 from . import config
-from . import progressbar
+import progressbar
 
 if platform.system() == "Windows":
     import win32com.client

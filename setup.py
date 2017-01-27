@@ -17,8 +17,7 @@ print(Version)
 setup(
     name='multibootusb',
     version=Version,
-    packages=['scripts', 'scripts.pyudev', 'scripts.pyudev.device', 'scripts.pyudev._ctypeslib', 'scripts.pyudev._os',
-              'scripts.gui', 'scripts.progressbar'],
+    packages=['scripts', 'scripts.gui'],
     #packages=find_packages(),
     scripts=['multibootusb', 'multibootusb-pkexec'],
     platforms=['Linux'],

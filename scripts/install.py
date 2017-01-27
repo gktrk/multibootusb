@@ -117,7 +117,7 @@ def install_progress():
     Function to calculate progress percentage of install.
     :return:
     """
-    from . import progressbar
+    import progressbar
 
     usb_details = details(config.usb_disk)
     usb_mount = usb_details['mount_point']

@@ -165,7 +165,7 @@ def uninstall_progress():
     Calculate uninstall progress percentage.
     :return:
     """
-    from . import progressbar
+    import progressbar
     usb_details = details(config.usb_disk)
     usb_mount = usb_details['mount_point']
     if platform.system() == 'Linux':
